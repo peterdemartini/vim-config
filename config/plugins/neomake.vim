@@ -10,9 +10,15 @@ if ! empty(g:python3_host_prog)
 endif
 
 " JAVASCRIPT / JSX
-let g:neomake_jsx_enabled_makers = ['eslint']
-let g:neomake_javascript_enabled_makers = ['eslint']
-let g:neomake_javascript_eslint_exe = './node_modules/.bin/eslint'
+let eslint_exec = $PWD . '/node_modules/.bin/eslint'
+if executable(eslint_exec)
+	let g:neomake_jsx_enabled_makers = ['eslint']
+	let g:neomake_jsx_eslint_args = ['--fix']
+	let g:neomake_jsx_eslint_exe = eslint_exec
+	let g:neomake_javascript_enabled_makers = ['eslint']
+	let g:neomake_javascript_eslint_args = ['--fix']
+	let g:neomake_javascript_eslint_exe = eslint_exec
+endif
 
 " YAML / ANSIBLE
 let g:neomake_yaml_enabled_makers = ['yamllint']

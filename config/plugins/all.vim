@@ -3,19 +3,19 @@
 "---------------------------------------------------------
 
 if dein#tap('denite.nvim')
-	nnoremap <silent><LocalLeader>r :<C-u>Denite -resume -refresh<CR>
-	nnoremap <silent><LocalLeader>f :<C-u>Denite file_rec<CR>
-	nnoremap <silent><LocalLeader>b :<C-u>Denite buffer file_old -default-action=switch<CR>
-	nnoremap <silent><LocalLeader>d :<C-u>Denite directory_rec -default-action=cd<CR>
-	nnoremap <silent><LocalLeader>v :<C-u>Denite register -buffer-name=register<CR>
-	xnoremap <silent><LocalLeader>v :<C-u>Denite register -buffer-name=register -default-action=replace<CR>
-	nnoremap <silent><LocalLeader>l :<C-u>Denite location_list -buffer-name=list<CR>
-	nnoremap <silent><LocalLeader>q :<C-u>Denite quickfix -buffer-name=list<CR>
-	nnoremap <silent><LocalLeader>n :<C-u>Denite dein<CR>
-	nnoremap <silent><LocalLeader>g :<C-u>Denite grep<CR>
-	nnoremap <silent><LocalLeader>j :<C-u>Denite jump change file_point<CR>
-	nnoremap <silent><LocalLeader>o :<C-u>Denite outline<CR>
-	nnoremap <silent><LocalLeader>s :<C-u>Denite session -buffer-name=list<CR>
+	nnoremap <silent><LocalLeader>r :<C-u>DeniteProjectDir -resume -refresh<CR>
+	nnoremap <silent><LocalLeader>f :<C-u>DeniteProjectDir file_rec<CR>
+	nnoremap <silent><LocalLeader>b :<C-u>DeniteProjectDir buffer file_old -default-action=switch<CR>
+	nnoremap <silent><LocalLeader>d :<C-u>DeniteProjectDir directory_rec -default-action=cd<CR>
+	nnoremap <silent><LocalLeader>v :<C-u>DeniteProjectDir register -buffer-name=register<CR>
+	xnoremap <silent><LocalLeader>v :<C-u>DeniteProjectDir register -buffer-name=register -default-action=replace<CR>
+	nnoremap <silent><LocalLeader>l :<C-u>DeniteProjectDir location_list -buffer-name=list<CR>
+	nnoremap <silent><LocalLeader>q :<C-u>DeniteProjectDir quickfix -buffer-name=list<CR>
+	nnoremap <silent><LocalLeader>n :<C-u>DeniteProjectDir dein<CR>
+	nnoremap <silent><LocalLeader>g :<C-u>DeniteProjectDir grep<CR>
+	nnoremap <silent><LocalLeader>j :<C-u>DeniteProjectDir jump change file_point<CR>
+	nnoremap <silent><LocalLeader>o :<C-u>DeniteProjectDir outline<CR>
+	nnoremap <silent><LocalLeader>s :<C-u>DeniteProjectDir session -buffer-name=list<CR>
 	nnoremap <silent><expr> <LocalLeader>t &filetype == 'help' ? "g\<C-]>" :
 		\ ":\<C-u>DeniteCursorWord -buffer-name=tag
 		\  tag:include\<CR>"

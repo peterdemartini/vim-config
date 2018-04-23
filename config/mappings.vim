@@ -263,9 +263,9 @@ if has('mac')
 	nmap <Leader>? :!open dict://<cword><CR><CR>
 
 	" Use Marked for real-time Markdown preview
-	if executable('/Applications/Marked 2.app/Contents/MacOS/Marked 2')
+	if executable('/Applications/Setapp/Marked.app/Contents/MacOS/Marked')
 		autocmd MyAutoCmd FileType markdown
-			\ nmap <buffer><Leader>P :silent !open -a Marked\ 2.app '%:p'<CR>
+			\ nmap <buffer><Leader>P :silent !open -a Marked.app '%:p'<CR>
 	endif
 
 	" Use Dash on Mac, for context help
