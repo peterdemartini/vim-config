@@ -13,11 +13,16 @@ endif
 let eslint_exec = $PWD . '/node_modules/.bin/eslint'
 if executable(eslint_exec)
 	let g:neomake_jsx_enabled_makers = ['eslint']
-	let g:neomake_jsx_eslint_args = ['--fix']
+	let g:neomake_jsx_eslint_args = ['-f', 'compact', '--fix']
 	let g:neomake_jsx_eslint_exe = eslint_exec
 	let g:neomake_javascript_enabled_makers = ['eslint']
-	let g:neomake_javascript_eslint_args = ['--fix']
+	let g:neomake_javascript_eslint_args = ['-f', 'compact', '--fix']
 	let g:neomake_javascript_eslint_exe = eslint_exec
+	augroup autofix_javascript_group
+		 autocmd!
+		 autocmd User NeomakeFinished checktime
+		 autocmd FocusGained * checktime
+	 augroup END
 endif
 
 " YAML / ANSIBLE
