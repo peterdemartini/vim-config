@@ -1,4 +1,4 @@
-# Rafael Bodill's Neo/vim Config
+# Peter DeMartini's Neo/vim Config
 
 Lean mean Neo/vim machine, 30-45ms startup time.
 
@@ -425,7 +425,7 @@ Note that,
 Key   | Mode | Action
 ----- |:----:| ------------------
 `Space` | _All_ | **Leader**
-`;` | _All_ | **Local Leader**
+`,` | _All_ | **Local Leader**
 Arrows | Normal | Resize splits (* Enable `g:elite_mode` in `.vault.vim`)
 `Backspace` | Normal | Match bracket (%)
 `K` | Normal | Open Zeal or Dash on some file types (except Python+Vim script)
@@ -498,9 +498,6 @@ Key   | Mode | Action
 `#` | Visual | Search selection backwards
 `<leader>`+`j` | Normal | Next on location list
 `<leader>`+`k` | Normal | Previous on location list
-`<leader>`+`b` | Normal | Toggle colorscheme background dark/light
-`s`+`-` | Normal | Lower colorscheme contrast (Support solarized8)
-`s`+`=` | Normal | Raise colorscheme contrast (Support solarized8)
 
 ### Window Management
 
@@ -526,25 +523,25 @@ Key   | Mode | Action
 
 Key   | Mode | Action
 ----- |:----:| ------------------
-`;`+`r` | Normal | Resumes last Denite window
-`;`+`f` | Normal | File search
-`;`+`b` | Normal | Buffers and MRU
-`;`+`d` | Normal | Directories
-`;`+`l` | Normal | Location list
-`;`+`q` | Normal | Quick fix
-`;`+`n` | Normal | Dein plugin list
-`;`+`g` | Normal | Grep search
-`;`+`j` | Normal | Jump points
-`;`+`o` | Normal | Outline tags
-`;`+`s` | Normal | Sessions
-`;`+`t` | Normal | Tag under cursor
-`;`+`p` | Normal | Jump to previous position
-`;`+`h` | Normal | Help
-`;`+`v` | Normal/Visual | Register
-`;`+`z` | Normal | Z (jump around)
-`;`+`;` | Normal | Command history
-`;`+`/` | Normal | Buffer lines
-`;`+`*` | Normal | Match line
+`,`+`r` | Normal | Resumes last Denite window
+`,`+`f` | Normal | File search
+`,`+`b` | Normal | Buffers and MRU
+`,`+`d` | Normal | Directories
+`,`+`l` | Normal | Location list
+`,`+`q` | Normal | Quick fix
+`,`+`n` | Normal | Dein plugin list
+`,`+`g` | Normal | Grep search
+`,`+`j` | Normal | Jump points
+`,`+`o` | Normal | Outline tags
+`,`+`s` | Normal | Sessions
+`,`+`t` | Normal | Tag under cursor
+`,`+`p` | Normal | Jump to previous position
+`,`+`h` | Normal | Help
+`,`+`v` | Normal/Visual | Register
+`,`+`z` | Normal | Z (jump around)
+`,`+`,` | Normal | Command history
+`,`+`/` | Normal | Buffer lines
+`,`+`*` | Normal | Match line
 `<leader>`+`gl` | Normal | Git log (all)
 `<leader>`+`gs` | Normal | Git status
 `<leader>`+`gc` | Normal | Git branches
@@ -564,8 +561,8 @@ Key   | Mode | Action
 
 Key   | Mode | Action
 ----- |:----:| ------------------
-`;`+`e` | Normal | Toggle file explorer
-`;`+`a` | Normal | Toggle file explorer on current file
+`,`+`e` | Normal | Toggle file explorer
+`,`+`a` | Normal | Toggle file explorer on current file
 | **Within _NERDTree_ buffers** |||
 `h/j/k/l` | Normal | Movement + collapse/expand + file open
 `w` | Normal | Toggle window size
