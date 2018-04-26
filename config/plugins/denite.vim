@@ -27,7 +27,7 @@ call denite#custom#source('tag', 'matchers', ['matcher_substring'])
 if has('nvim') && &runtimepath =~# '\/cpsm'
 	call denite#custom#source(
 		\ 'buffer,file_mru,file_old,file_rec,grep,mpc,line',
-		\ 'matchers', ['matcher_cpsm', 'matcher_fuzzy'])
+		\ 'matchers', ['matcher_cpsm', 'matcher_fuzzy', 'matcher_project_files'])
 endif
 
 " SORTERS
